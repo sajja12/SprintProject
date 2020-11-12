@@ -28,7 +28,7 @@ class ProductTest {
 	@Test
 	public void update()throws InvalidOperation
 	{
-		Product product=new Product("eeg","5","ddgg");
+		Product product=new Product("wood","5","wood is used for construction");
 		Mockito.when(productController.updateProduct( product)).thenReturn(product);
 		assertEquals(product,productController.updateProduct(product));
 
@@ -43,7 +43,7 @@ class ProductTest {
 	@Test
 	public void addProducts() 
 	{
-		Product p1=new Product("dfgh","5","sfdghyujy");
+		Product p1=new Product("wood","5","wood is used for construction");
 		Mockito.when(productController.addProduct(p1)).thenReturn(p1);
 	    assertEquals(p1,productController.addProduct(p1));
 	}
