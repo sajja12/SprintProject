@@ -25,13 +25,13 @@ public class Product {
 	public Product() {
 		
 	}
-//	public Product(int productId, String productName, String productQuanity, String productDescription) {
-//		super();
-//		this.productId = productId;
-//		this.productName = productName;
-//		this.productQuanity = productQuanity;
-//		this.productDescription = productDescription;
-//	}
+	public Product(int productId, String productName, String productQuanity, String productDescription) {
+		super();
+		this.productId = productId;
+		this.productName = productName;
+		this.productQuanity = productQuanity;
+		this.productDescription = productDescription;
+	}
 	public Product(String productName, String productQuanity, String productDescription) {
 		super();
 		this.productName = productName;

@@ -472,3 +472,6 @@ Action:
 
 Identify and stop the process that's listening on port 8082 or configure this application to listen on another port.
 
+2020-11-12 21:56:13,647 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-12 21:56:13,662 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-11-12 21:56:14,051 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-1] Completed initialization in 389 ms

@@ -13,7 +13,7 @@ import com.forest.model.Contract;
 import com.forest.repository.ContractRepository;
 import com.validations.ValidateContract;
 
-//defining the business logic
+
 @Service
 public class ContractService {
 	@Autowired
@@ -52,8 +52,11 @@ public class ContractService {
 	public Contract updateContract( Contract Contract)
 	{
 		//validating the DeliveryDate by using the ValidateContract class
-		if(Contract.getDeliveryDate().matches(ValidateContract.dateregex))
+		if(Contract.getDeliveryDate().matches(ValidateContract.dateregex)) {
+			System.out.println( "Contract details are successfully updated");
 				return contractRepository.save(Contract);
+				
+		}
 		else
 			throw new InvalidOperation("Contract is not found with given id");
 				
