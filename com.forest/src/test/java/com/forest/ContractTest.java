@@ -23,8 +23,9 @@ public class ContractTest
 	
 	@InjectMocks
 	ContractController contractController;
-
-	public void update()throws InvalidOperation
+	
+	@Test
+	public void update() 
 	{
 		Contract contract=new Contract("hyd","8/10/2011","6");
 		Mockito.when(contractController.updateContract(contract)).thenReturn(contract);

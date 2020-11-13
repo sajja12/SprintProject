@@ -13,11 +13,12 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @Configuration
-@EnableSwagger2
+@EnableSwagger2  //Enables the swagger2 for your spring boot application
 public class SwaggerConfig {
 
 	@Bean
-	public Docket api() {
+	public Docket api() //Docket to decide what kind of APIs you would want to document
+	{
 		return new Docket(DocumentationType.SWAGGER_2).apiInfo(apiInfo()).select().apis(RequestHandlerSelectors.any())
 				.paths(pathsToBeDocumented()).build();
 	}

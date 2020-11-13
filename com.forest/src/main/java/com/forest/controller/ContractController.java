@@ -22,8 +22,8 @@ import com.forest.service.ContractService;
 @Controller
 @RequestMapping("/Contract")
 public class ContractController implements IContractController{
-	
 	Logger logger=LoggerFactory.getLogger(ContractController.class);
+	
 	//autowire the ContractService class 
 	@Autowired
 	private ContractService ContractService;
